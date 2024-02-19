@@ -5,6 +5,7 @@ import SwiftSyntaxMacros
 struct RQMacrosPlugin: CompilerPlugin {
     let providingMacros: [Macro.Type] = [
         URLInitMacro.self,
-        HexColorMacro.self
+        HexColorMacro.self,
+        LocalizableMacro.self
     ]
 }

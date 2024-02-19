@@ -10,3 +10,5 @@ import UIKit
 public macro hexColor(_ hexadecimal: UInt) -> UIColor = #externalMacro(module: "RQMacrosSources", type: "HexColorMacro")
 #endif
 
+@freestanding(expression)
+public macro localizable(_ key: String) -> String = #externalMacro(module: "ZPMacrosSources", type: "LocalizableMacro")
